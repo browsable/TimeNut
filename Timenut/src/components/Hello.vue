@@ -1,7 +1,6 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <test>test</test>
     <h2>Essential Links</h2>
 
     <ul>
@@ -23,11 +22,8 @@
 </template>
 
 <script>
-  import test from '../components/test';
-
   export default {
     name: 'hello',
-    components: { test },
     data() {
       return {
         msg: 'Welcome to Your Vue.js App',

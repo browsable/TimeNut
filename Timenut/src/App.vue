@@ -1,14 +1,21 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
+    <HeaderBar/>
+    <MapSection/>
+    <SearchSection/>
+    <!--<router-view></router-view>-->
   </div>
 </template>
 
 <script>
-export default {
-  name: 'app',
-};
+  import HeaderBar from './components/HeaderBar';
+  import MapSection from './components/MapSection';
+  import SearchSection from './components/SearchSection';
+
+  export default {
+    name: 'app',
+    components: { HeaderBar, MapSection, SearchSection },
+  };
 </script>
 
 <style>
@@ -18,6 +25,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0;
+  padding: 0;
 }
 </style>
